@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { IMessage } from '@/contexts/messagesContext';
 
-export const Message = ({ user, content, avatar, timeStamp, isSender, userID }: IMessage) => {
+export const Message = ({ user, content, avatar, isSender }: IMessage) => {
   return (
     <div
       className={cn(
