@@ -37,12 +37,12 @@ export const Chat = () => {
             return (
               <Message
                 key={index}
-                avatar={user?.photoURL || ''}
+                avatar={message?.avatar || ''}
                 timeStamp={message.timeStamp}
                 userID={message.userID}
                 content={message.content}
                 isSender={message.userID === user?.uid}
-                user={user?.displayName || ''}
+                user={message?.user || ''}
               />
             )
           })}
